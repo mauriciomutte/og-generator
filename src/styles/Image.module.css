@@ -1,0 +1,25 @@
+.main {
+	background-color: #fff1;
+	display: flex;
+	flex-direction: column;
+	height: 630px;
+	justify-content: center;
+	padding: 86px;
+	width: 1200px;
+}
+
+.main h1 {
+	margin: auto 0 0;
+	font-size: 48px;
+}
+
+.author {
+	display: flex;
+	align-items: center;
+	margin-top: auto;
+	gap: 24px;
+}
+
+.author h2 {
+	font-size: 24px;
+}
