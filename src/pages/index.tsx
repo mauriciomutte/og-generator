@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 import styles from '../styles/Image.module.css';
 
-const ImagePage: NextPage = () => {
+const HomePage: NextPage = () => {
 	const { query } = useRouter();
 
 	const title = query.title || '';
@@ -29,4 +29,4 @@ const ImagePage: NextPage = () => {
 	);
 };
 
-export default ImagePage;
+export default HomePage;
