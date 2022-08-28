@@ -5,7 +5,10 @@ import { getScreenshot } from '../../lib/chromium';
 const isDev = !process.env.AWS_REGION;
 const isHtmlDebug = process.env.OG_HTML_DEBUG === '1';
 
-const handler = async (req: NextApiRequest, res: NextApiResponse) => {
+export default async function handler(
+	req: NextApiRequest,
+	res: NextApiResponse
+) {
 	try {
 		const query = req.query;
 
@@ -15,7 +18,7 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
 			throw new Error('Title is required');
 		}
 
-		const url = `${process.env.NEXT_PUBLIC_APP_URL}/image?title=${title}`;
+		const url = `${process.env.NEXT_PUBLIC_APP_URL}/?title=${title}`;
 
 		if (isHtmlDebug) {
 			return res.redirect(url);
@@ -38,6 +41,4 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
 		res.end('<h1>Internal Error</h1><p>Sorry, there was a problem</p>');
 		console.error(e);
 	}
-};
-
-export default handler;
+}
