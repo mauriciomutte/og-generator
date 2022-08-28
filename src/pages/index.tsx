@@ -13,6 +13,7 @@ const HomePage: NextPage = () => {
 	return (
 		<main className={styles.main}>
 			<Head>
+				<title>OG Generator</title>
 				<meta name="robots" content="noindex" />
 			</Head>
 			<h1 className="gradient">{title}</h1>
