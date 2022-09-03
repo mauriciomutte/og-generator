@@ -8,7 +8,7 @@ const nextConfig = {
 	async rewrites() {
 		return [
 			{
-				source: '/og-image.png',
+				source: '/image.png',
 				destination: '/api/og-image',
 				has: [{ type: 'query', key: 'title' }],
 			},
