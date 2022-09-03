@@ -18,7 +18,7 @@ export default async function handler(
 			throw new Error('Title is required');
 		}
 
-		const url = `${process.env.NEXT_PUBLIC_APP_URL}/?title=${title}`;
+		const url = `${process.env.NEXT_PUBLIC_APP_URL}?title=${title}`;
 
 		if (isHtmlDebug) {
 			return res.redirect(url);
