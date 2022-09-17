@@ -1,4 +1,4 @@
-<h1 align="center">OG Generator</h1>
+<h1 align="center">🖼️ OG Generator</h1>
 
 Serverless service that generates dynamic Open Graph images used in my personal blog.
 
