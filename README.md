@@ -26,4 +26,4 @@ We need an image URL (with .png extension) to show in the Open Graph tag meta. F
 
 ## Resources
 
-- [vercel/og-image]()
+- [vercel/og-image](https://github.com/vercel/og-image)
