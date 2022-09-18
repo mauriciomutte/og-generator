@@ -25,13 +25,14 @@ export default async function handler(
 		}
 
 		const file = await getScreenshot(url, isDev);
+		const ONE_YEAR_IN_SECONDS = 60 * 60 * 24 * 365;
 
 		res.statusCode = 200;
 
 		res.setHeader('Content-Type', `image/png`);
 		res.setHeader(
 			'Cache-Control',
-			'public, immutable, no-transform, s-maxage=31536000, max-age=31536000'
+			`public, immutable, no-transform, s-maxage=${ONE_YEAR_IN_SECONDS}, max-age=${ONE_YEAR_IN_SECONDS}`
 		);
 
 		res.end(file);
