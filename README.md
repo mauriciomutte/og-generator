@@ -1,3 +1,6 @@
+![Group 2](https://user-images.githubusercontent.com/20569339/190876073-514a6e82-60b1-423e-8a66-3430d1eb8c6d.jpeg)
+
+
 <h1 align="center">🖼️ OG Generator</h1>
 
 Serverless service that generates dynamic Open Graph images used in my personal blog.
