@@ -5,6 +5,9 @@
 
 Serverless service that generates dynamic Open Graph images used in my personal blog.
 
+> **Note**: If you're using Next.js version 13.0.0 or newer, a highly recommended alternative for generating dynamic social cards is the [@vercel/og](https://vercel.com/blog/introducing-vercel-og-image-generation-fast-dynamic-social-card-images) service. It integrates seamlessly with Next.js and provides a streamlined solution for creating Open Graph (OG) images.
+
+
 ## What is an Open Graph Image?
 
 Basically, it's the image that is displayed when you share a hyperlink on Twitter, Facebook, or Slack. See in example:
